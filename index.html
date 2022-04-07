@@ -7,17 +7,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Museum</title>
     <link rel="stylesheet" href="style.css">
-    <!--    <link rel="icon" href="assets/favicon.ico">-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
 </head>
 <body>
 <main>
-    <header>
+    <header class="container black">
         <div class="logo">
             <img src="assets/svg/logo.svg" alt="louvre_logo">
             <p>LOUVRE</p>
@@ -27,15 +20,15 @@
                 <li><a href="#visiting">Visiting</a></li>
                 <li><a href="#explore">Explore</a></li>
                 <li><a href="#video">Video</a></li>
-                <li><a href="">Gallery</a></li>
-                <li><a href="">Tickets</a></li>
-                <li><a href="">Contacts</a></li>
+                <li><a href="#art-gallery">Gallery</a></li>
+                <li><a href="#tickets">Tickets</a></li>
+                <li><a href="#contacts">Contacts</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section id="welcome" class="black">
-            <div class="container section-content">
+        <section id="welcome">
+            <div class="container black">
                 <div class="text_welcome">
                     <h1>WELCOME <br> TO THE LOUVRE</h1>
                     <h4>From the castle to the museum</h4>
@@ -43,11 +36,11 @@
                     <p>Discover the Louvre</p>
                     </div>
                 </div>
-                <img src="assets/img/Monalisa.jpg" alt="">
+                <img src="assets/img/Monalisa.jpg" alt="Monalisa-portrait">
             </div>
         </section>
         <section id="visiting">
-            <div class="container section-content">
+            <div class="container">
                 <h2>VIRTUAL TOUR</h2>
                 <div class="virtual_tour_wrapper">
                     <a href="tours/tour1.html" target="_blank">
@@ -90,9 +83,9 @@
             </div>
         </section>
         <section id="explore">
-            <div class="explore-container section-content">
-                <h2>PICTURE EXPLORE</h2>
+            <div class="explore-container container black">
                 <div class="explore-text">
+                <h2>PICTURE EXPLORE</h2>
                 <p>Las Meninas is a 1656 painting by Diego Velázquez, the leading<br>
                     artist of the Spanish Golden Age.</p>
                 <p>It was cleaned in 1984 to remove a <span>"yellow veil"</span> of dust that had <br>
@@ -100,12 +93,14 @@
                 <p>The cleaning provoked furious protests, not because the picture had <br>
                     been damaged in any way, but because it looked different.
                 </div>
+                <div class="explore-img">
                     <img src="assets/img/Rectangle%20(2).png" alt="">
-                    <img src="assets/img/Rectangle%20(1).png" alt="">
+<!--                    <img src="assets/img/Rectangle%20(1).png" alt="">-->
+                </div>
             </div>
         </section>
         <section class="video-section" id="video">
-            <div class="video-journey section-content">
+            <div class="video-journey container">
                 <div class="video_text">
                     <h1 class="video-text-item">Video journey</h1>
                     <p>Enter and visit one of the most famous museums in the world and enjoy <br> masterpieces such as Mona
@@ -134,7 +129,7 @@
                 </div>
             </div>
         </section>
-        <section id="art-gallery" class="section-content black">
+        <section id="art-gallery" class="container black">
             <h2>Art Gallery</h2>
             <div class="gallery">
                 <img src="assets/img/galery%20first.png" alt="img1">
@@ -151,7 +146,7 @@
                 <img src="assets/img/galery12%201.png" alt="img12">
             </div>
         </section>
-        <section id="tickets">
+        <section id="tickets" class="container">
             <h2>BUY TICKETS</h2>
             <div class="buy-tickets">
                 <div class="buy-img">
@@ -179,7 +174,7 @@
             <img src="assets/img/parallax%201.png" alt="">
         </section>
     </main>
-    <section id="contacts">
+    <section id="contacts" class="container">
         <h2>Contacts</h2>
         <div class="contacts-grid">
         <div class="contacts-text">
@@ -191,7 +186,7 @@
         <img src="assets/img/map.png" alt="">
         </div>
     </section>
-    <footer class="section-content">
+    <footer class="container black">
         <div class="logo">
             <img src="assets/svg/logo.svg" alt="louvre_logo">
             <p>LOUVRE</p>
