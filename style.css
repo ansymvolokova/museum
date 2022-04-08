@@ -183,6 +183,8 @@ li a, .virtual_tour_wrapper p {
 
 /*visiting section = virtual tour end */
 
+/*picture explore section*/
+
 .explore-text{
     font-size: 22px;
     color:white;
@@ -195,7 +197,7 @@ li a, .virtual_tour_wrapper p {
 
 .explore-container{
     display: grid;
-    grid-template-columns: repeat(2, 720px);
+    grid-template-columns: repeat(2, 50%);
     justify-content: center;
     box-sizing: border-box;
     margin-bottom: 75px;
@@ -220,6 +222,9 @@ li a, .virtual_tour_wrapper p {
     grid-row: 1/2;
     grid-column: 2/3;
 }
+
+/*picture explore section end*/
+
 .videos{
     display: grid;
     grid-template-columns: repeat(3, 452px);
@@ -262,6 +267,10 @@ li a, .virtual_tour_wrapper p {
     letter-spacing: 5px;
 }
 
+/*art-gallery section end */
+
+/*buy tickets section*/
+
 #tickets h2{
     color: #9D8665;
     font-size: 80px;
@@ -280,6 +289,8 @@ li a, .virtual_tour_wrapper p {
     justify-content: center;
 
 }
+
+/*buy tickets section end*/
 
 #contacts h2{
     color: #9D8665;
@@ -323,7 +334,36 @@ footer{
 
 @media screen and (max-width: 1024px) {
 
-    .section-content{
+    .nav{
+        display: none;
+    }
+
+    .logo img{
+        width: 49px;
+        margin-right: 25px;
+    }
+
+    .logo p{
+        font-size: 28px;
+    }
+
+    #welcome h1, #visiting h2, #explore h2, #art-gallery h2, #tickets h2, #contacts h2 {
+        font-size: 50px;
+    }
+
+    #welcome p{
+        font-size: 24px;
+    }
+
+    #discover-button p{
+        font-size: 20px;
+    }
+
+    #welcome .container img{
+        width: 700px;
+    }
+
+    .container{
         width: 984px;
     }
 
@@ -331,12 +371,38 @@ footer{
         height: 1313px;
     }
 
+    #visiting h3{
+        font-size: 28px;
+        margin-bottom: 22px;
+    }
+
+    #visiting p{
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    h6{
+        font-size: 16px;
+        font-family: robotothin, sans-serif;
+    }
+
+    .virtual_tour_wrapper img{
+        width:330px;
+        height:215px;
+    }
+
+    .virtual_tour_wrapper .link-text{
+        height: 105px;
+    }
+
+
     .virtual_tour_wrapper{
         display: grid;
         grid-template-columns: repeat(2, 330px);
         grid-template-rows: repeat(3, 345px);
         column-gap: 108px;
-        margin: 0 108px 0 108px;
+        row-gap: 60px;
+        margin: 0 108px;
     }
 
     .explore-container{
@@ -344,6 +410,18 @@ footer{
         flex-direction: column;
         justify-content: center;
     }
+
+    .explore-text p{
+        font-size: 20px;
+    }
+
+    .explore-img{
+        margin: 20px auto;
+        width: 720px;
+        height: 700px;
+
+    }
+
     #video{
         height: 881px;
     }
@@ -354,15 +432,54 @@ footer{
         display: grid;
         grid-template-columns: repeat(3, 300px);
         grid-template-rows: 504px 170px;
+        row-gap: 40px;
     }
     .big-video{
+        width: 984px;
+        height: 505px;
         grid-column: 1/4;
         grid-row: 1/2;
     }
+
+    .smaller-videos{
+        width: 300px;
+        height: 170px;
+    }
+
     .gallery{
         display: grid;
-        grid-template-columns: repeat(3, 304px);
-        grid-template-rows: auto;
+        grid-template-columns: repeat(3, 30%);
+        grid-template-rows: repeat(4, 20%);
+    }
+
+    .ticket-type{
+        display: none;
+    }
+
+    .buy-tickets{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .buy-tickets img{
+        width: 700px;
+    }
+
+    .contacts-grid{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .contacts-grid img{
+        width: 694px;
+        height: 454px;
+    }
+
+    .contacts-text b{
+        font-size: 24px;
+    }
+    .contacts-text p, address{
+        font-size: 20px;
     }
 
 
